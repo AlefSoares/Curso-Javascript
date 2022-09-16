@@ -5,7 +5,7 @@ o segundo será o número de vezes que haverá repetição. Um array será retor
 
 function repeticao(item, qtd) {
   let resultado = []
-  for (let i = 0; i <= qtd; i++) {
+  for (let i = 0; i < qtd; i++) {
     resultado.push(item)
   }
   return resultado
