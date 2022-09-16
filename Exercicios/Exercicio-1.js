@@ -6,4 +6,4 @@ function concatenar(texto) {
   return `Olá, ${texto}!`
 }
 
-concatenar('Mundo')
+console.log(concatenar('Mundo'))
