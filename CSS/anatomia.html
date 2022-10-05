@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        /*Utilizando o ponto aplica o CSS em uma Class*/
+        .seletor{
+            color: rgb(22, 1, 1);
+            font-size: 30px;
+            text-align: center;
+            /*Multiplos valores*/
+            border: solid 5px navy;
+            font-family: Arial, Helvetica, sans-serif;
+
+            /*Funções*/
+            width: calc(100% - 40px);
+            background-color: rgb(191, 200, 211);
+
+        }
+
+        /*Usando uma Pseudo-classe*/
+
+        .seletor:hover{
+            background-color: red;
+        }
+
+        /*Usando um Pseudo-elemento*/
+        .seletor::first-letter{
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        /*Padrão*/
+
+
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>
