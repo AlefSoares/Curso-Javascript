@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modificando HTML #02</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body class="conteudo exercicio">
+    <div>
+      <p>Texto Inicial</p>
+    </div>
+    <script>
+      // document.querySelector('#primeiro').classList.add('destaque')
+      // const selecionar = seletor => document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+      // const deselecionar = seletor => document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+
+      // selecionar('div')
+
+      // deselecionar('*')
+
+      // selecionar('.terceiro.ultimo')
+
+      const div = document.querySelector('div')
+      div.innerHTML = 'Texto Alterado'
+      // div.outerHTML = 'Texto Alterado'  <-- Altera o elemento na DOM
+
+      // Depois do incio da tag 'DIV' adcione o eletemento.
+      div.insertAdjacentHTML('beforebegin', '<p>Antes do inicio</p>')
+
+      // depois do inicio da tag 'DIV' adcione o eletemento.
+      div.insertAdjacentHTML('afterbegin', '<p>depois do inicio</p>')
+
+      // Antes do fim da tag 'DIV' adcione o eletemento.
+      div.insertAdjacentHTML('beforeend', '<p>Antes do fim</p>')
+
+      // Depois do fim da tag 'DIV' adcione o eletemento.
+      div.insertAdjacentHTML('afterbegin', '<p>depois do fim</p>')
+    </script>
+  </body>
+</html>
